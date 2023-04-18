@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function Filter({setActiveGenre, activeGenre, setFiltered, popular}) {
 
     useEffect(() => {
-        if(activeGenre == 0) {
+        if(activeGenre === 0) {
             setFiltered(popular);
             return;
         }
